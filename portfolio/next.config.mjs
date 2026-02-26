@@ -1,10 +1,12 @@
 /** @type {import('next').NextConfig} */
+const isProd = process.env.NODE_ENV === 'production';
+
 const nextConfig = {
   /* config options here */
   reactCompiler: true,
   output: 'export',
-  basePath: '/Personal-Portfolio',
-  assetPrefix: '/Personal-Portfolio',
+  basePath: isProd ? '/Personal-Portfolio' : '',
+  assetPrefix: isProd ? '/Personal-Portfolio' : '',
   images: {
     unoptimized: true,
   },
