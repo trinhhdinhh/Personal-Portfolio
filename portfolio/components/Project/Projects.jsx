@@ -34,8 +34,8 @@ const Projects = () => {
   ]
   return (
     <div id="projects" className='w-full px-[12%] py-10 scroll-mt-20'>
-        <h4 className='text-center mb-2 text-lg font-ovo'>What I have worked on</h4>
-        <h2 className='text-center text-5xl font-ovo mb-16'>Projects</h2>
+        <h4 className='text-center mb-2 text-lg font-ovo dark:text-gray-300'>What I have worked on</h4>
+        <h2 className='text-center text-5xl font-ovo dark:text-white mb-16'>Projects</h2>
         <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-8 w-full mx-auto'>
           {projects.map((project, index)=>{
             return <div key={index}>
