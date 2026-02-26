@@ -9,9 +9,9 @@ const Header = () => {
         <Image src={assets.profile_img} alt='' className= 'rounded-full w-32'/>
     </div>
     <h3 className='flex items-end gap-2 text-xl md:text-2xl mb-3 font-ovo'>Hello! I&apos;m Trinh Dinh!<Image src={assets.hand_icon} alt='' className= 'rounded-full w-6'/></h3>
-    <h1 className='text-3xl sm:text-6xl lg:text-[66px] font-ovo'>Aspiring Software Engineer</h1>
+    <h1 className='text-3xl sm:text-6xl lg:text-[66px] font-ovo'>Software Engineer Student</h1>
     <p className='max-w-2xl mx-auto font-ovo'>
-      DESCRIPTION!!!!!!! {/* FINISH DESCRIPTION */}
+      I&apos;m a Computer Science student at LSU with a concentration in Software Engineering. I&apos;m seeking software engineering internships and opportunities where I can contribute to impactful products and grow as an engineer.  {/* FINISH DESCRIPTION */}
     </p>
     <div className='flex flex-col sm:flex-row items-center gap-4 mt-4'>
       <a href="#contact" className='px-10 py-3 border-white rounded-full bg-black text-white flex items-center gap-2'>Contact Me<Image src={assets.right_arrow_white} alt='' className= 'w-4'/></a>
