@@ -1,8 +1,12 @@
+'use client'
 import { assets, infoList, toolsData } from '@/assets/assets'
 import Image from 'next/image'
-import React from 'react'
+import React, { useState } from 'react'
 
 const About = () => {
+  const [pressedInfoCard, setPressedInfoCard] = useState(null)
+  const [pressedTool, setPressedTool] = useState(null)
+
   return (
     <div id='about' className='w-full px-[12%] py-10 scroll-mt-20'>
         <h4 className='text-center mb-2 text-lg font-ovo dark:text-gray-300'>Introduction</h4>
@@ -16,7 +20,19 @@ const About = () => {
               <p className='mb-10 max-w-2xl font-ovo dark:text-gray-300'>Computer Science student at LSU specializing in Software Engineering and Data Science, focused on building scalable, software systems. I develop full-stack applications used by real teams and users, combining engineering, entrepreneurship, and data to create tools that drive smarter decisions.</p>
               <ul className='grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl'>
                 {infoList.map(({icon, iconDark, title, description},index)=>(
-                  <li className='border-[0.5px] border-gray-400 dark:border-gray-600 rounded-xl p-6 cursor-pointer hover:bg-purple-100 dark:hover:bg-purple-900/20 hover:-translate-y-1 duration-500 hover:shadow-lg dark:bg-gray-800/50' key={index}>
+                  <li
+                    className={`border-[0.5px] border-gray-400 dark:border-gray-600 rounded-xl p-6 cursor-pointer duration-500 dark:bg-gray-800/50 ${
+                      pressedInfoCard === index
+                        ? 'bg-purple-100 dark:bg-purple-900/20 -translate-y-1 shadow-lg'
+                        : 'hover:bg-purple-100 dark:hover:bg-purple-900/20 hover:-translate-y-1 hover:shadow-lg'
+                    }`}
+                    key={index}
+                    onTouchStart={() => setPressedInfoCard(index)}
+                    onTouchEnd={() => setPressedInfoCard(null)}
+                    onMouseDown={() => setPressedInfoCard(index)}
+                    onMouseUp={() => setPressedInfoCard(null)}
+                    onMouseLeave={() => setPressedInfoCard(null)}
+                  >
                     <Image src={icon} alt={title} className='w-7 mt-3 dark:hidden'/>
                     <Image src={iconDark} alt={title} className='w-7 mt-3 hidden dark:block'/>
                     <h3 className='my-4 font-semibold text-grey-700 dark:text-white'>{title}</h3>
@@ -27,7 +43,19 @@ const About = () => {
               <h4 className='my-6 text-gray-700 dark:text-gray-300 font-ovo'>Tools I use</h4>
               <ul className='flex items-center gap-3 sm:gap-5'>
                 {toolsData.map((tool, index)=>(
-                  <li className='flex items-center justify-center w-12 sm:w-13 aspect-square border border-gray-400 dark:border-gray-600 rounded-lg cursor-pointer hover:-translate-y-1 duration-500 dark:bg-gray-800/50'key={index}>
+                  <li
+                    className={`flex items-center justify-center w-12 sm:w-13 aspect-square border border-gray-400 dark:border-gray-600 rounded-lg cursor-pointer duration-500 dark:bg-gray-800/50 ${
+                      pressedTool === index
+                        ? '-translate-y-1'
+                        : 'hover:-translate-y-1'
+                    }`}
+                    key={index}
+                    onTouchStart={() => setPressedTool(index)}
+                    onTouchEnd={() => setPressedTool(null)}
+                    onMouseDown={() => setPressedTool(index)}
+                    onMouseUp={() => setPressedTool(null)}
+                    onMouseLeave={() => setPressedTool(null)}
+                  >
                     <Image src={tool} alt='Tool' className='w-5 sm:w-7'/>
                   </li>
                 ))}

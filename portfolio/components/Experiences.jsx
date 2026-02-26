@@ -1,8 +1,11 @@
-import React from 'react'
+'use client'
+import React, { useState } from 'react'
 import { BsBriefcase } from 'react-icons/bs'
 import { PiGraduationCap } from 'react-icons/pi'
 
 const Experiences = () => {
+  const [pressedCard, setPressedCard] = useState(null)
+
   const experiences = [
     {
       id: 1,
@@ -89,7 +92,16 @@ const Experiences = () => {
 
           {/* Content */}
           <div className='ml-16 md:ml-0 md:w-[calc(50%-2rem)]'>
-            <div className='bg-white dark:bg-gray-800 shadow-md rounded-xl p-6 hover:scale-105 transition-all duration-300'>
+            <div
+              className={`bg-white dark:bg-gray-800 shadow-md rounded-xl p-6 transition-all duration-300 ${
+                pressedCard === index ? 'scale-105' : 'hover:scale-105'
+              }`}
+              onTouchStart={() => setPressedCard(index)}
+              onTouchEnd={() => setPressedCard(null)}
+              onMouseDown={() => setPressedCard(index)}
+              onMouseUp={() => setPressedCard(null)}
+              onMouseLeave={() => setPressedCard(null)}
+            >
               <div className='flex items-center gap-2 text-sm text-purple-500 dark:text-purple-400 mb-2 '>
                 <span className='px-3 py-1 rounded-full bg-purple-600/10 dark:bg-purple-600/20 font-ovo font-medium'>
                 {item.year}
