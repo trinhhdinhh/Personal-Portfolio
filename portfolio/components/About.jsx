@@ -13,7 +13,7 @@ const About = () => {
                 <Image src={assets.user_image} alt='user' className='w-full rounded-3xl' />
             </div>
             <div className='flex-1'>
-              <p className='mb-10 max-w-2xl font-ovo dark:text-gray-300'>DESCRIPTION</p>
+              <p className='mb-10 max-w-2xl font-ovo dark:text-gray-300'>Computer Science student at LSU specializing in Software Engineering and Data Science, focused on building scalable, software systems. I develop full-stack applications used by real teams and users, combining engineering, entrepreneurship, and data to create tools that drive smarter decisions.</p>
               <ul className='grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl'>
                 {infoList.map(({icon, iconDark, title, description},index)=>(
                   <li className='border-[0.5px] border-gray-400 dark:border-gray-600 rounded-xl p-6 cursor-pointer hover:bg-purple-100 dark:hover:bg-purple-900/20 hover:-translate-y-1 duration-500 hover:shadow-lg dark:bg-gray-800/50' key={index}>
