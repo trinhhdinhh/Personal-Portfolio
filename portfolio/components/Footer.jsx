@@ -6,7 +6,9 @@ const Footer = () => {
   return (
     <div className='mt-20'>
         <div className='text-center'>
+            <a href="#top">
             <h1 className='text-4xl font-bold cursor-pointer text-black dark:text-white font-ovo mb-2'>Trinh Dinh</h1>
+            </a>
             <div className='w-max flex items-center gap-2 mx-auto mt-4 dark:text-gray-300'>
                 <Image src={assets.mail_icon} alt='' className='w-6 dark:hidden'/>
                 <Image src={assets.mail_icon_dark} alt='' className='w-6 hidden dark:block'/>
