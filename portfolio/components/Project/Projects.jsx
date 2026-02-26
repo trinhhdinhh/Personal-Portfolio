@@ -2,35 +2,34 @@ import React from 'react'
 import ProjectCard from './ProjectCard'
 
 const Projects = () => {
-  // Sample data - replace with your actual projects
   const projects = [
     {
       id: 1,
-      title: "E-Commerce Platform",
-      description: "A full-stack e-commerce solution with real-time inventory, payment processing, and admin dashboard.",
-      image: "/placeholder-ecommerce.jpg", // Replace with your actual image path
-      technologies: ["Next.js", "TypeScript", "Stripe"]
+      title: "Personal Portfolio Website",
+      description: "Designed and developed a modern, responsive portfolio website using Next.js and React. Features an interactive timeline showcasing work experiences and education with custom icons, smooth scrolling navigation, project showcase cards with technology badges, and a professional contact section with downloadable resume.",
+      image: "/placeholder-portfolio.jpg",
+      technologies: ["Next.js", "React", "TailwindCSS", "React Icons"]
     },
     {
       id: 2,
-      title: "Task Management App",
-      description: "Collaborative project management tool with real-time updates, task assignments, and progress tracking.",
-      image: "/placeholder-tasks.jpg", // Replace with your actual image path
-      technologies: ["React", "Node.js", "Socket.io"]
+      title: "Finance Tracker App",
+      description: "Led cross-functional team as Project Manager, coordinating development milestones and managing Git workflows. Developed a full-stack personal finance tracking application using Flutter and Dart with Firebase backend, featuring real-time transaction monitoring, category-based spending analytics, and income/expense visualization.",
+      image: "/placeholder-finance.jpg",
+      technologies: ["Flutter", "Dart", "Firebase", "Firestore", "Figma"]
     },
     {
       id: 3,
-      title: "AI Content Generator",
-      description: "GPT-powered content creation platform for marketers with customizable templates and SEO optimization.",
-      image: "/placeholder-ai.jpg", // Replace with your actual image path
-      technologies: ["React", "Python", "OpenAI", "FastAPI"]
+      title: "FSAE Member Portal",
+      description: "Architected and developed a comprehensive project management dashboard using React 19, TypeScript, and TailwindCSS, featuring real-time search/filtering, dynamic project cards, and CRUD operations. Integrated and customized 30+ shadcn/ui components with custom LSU branding.",
+      image: "/placeholder-fsae.jpg",
+      technologies: ["React", "TypeScript", "TailwindCSS", "Radix UI", "Figma"]
     },
     {
       id: 4,
-      title: "AI Content Generator",
-      description: "GPT-powered content creation platform for marketers with customizable templates and SEO optimization.",
-      image: "/placeholder-ai.jpg", // Replace with your actual image path
-      technologies: ["React", "Python", "OpenAI", "FastAPI"]
+      title: "Interactive World Map",
+      description: "Developed an interactive SVG world map with clickable countries displaying real-time details including population, area, capital, languages, currency, and flag information for enhanced geographic learning.",
+      image: "/placeholder-map.jpg",
+      technologies: ["HTML", "CSS", "JavaScript", "SVG"]
     }
   ]
   return (

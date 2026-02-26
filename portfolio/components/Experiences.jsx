@@ -3,26 +3,65 @@ import { BsBriefcase } from 'react-icons/bs'
 import { PiGraduationCap } from 'react-icons/pi'
 
 const Experiences = () => {
-  // Sample data
   const experiences = [
     {
       id: 1,
       type: "work",
-      year: "2022 - Present",
-      title: "Senior Full-Stack Developer",
-      company: "TechCorp Inc.",
-      description: "Leading development of enterprise SaaS products. Mentoring junior developers and implementing best practices.",
-      skills: ["React", "Node.js", "AWS", "TypeScript"],
+      year: "Sept 2025 - Present",
+      title: "Software Engineer",
+      company: "TigerRacing Formula SAE",
+      description: "Architected and developed a full-stack member portal serving 50+ engineers across 4 technical divisions, enabling project tracking, resource allocation, and financial management for Formula SAE competition team.",
+      skills: ["React", "TypeScript", "TailwindCSS", "Figma"],
       side: "right"
     },
     {
       id: 2,
+      type: "work",
+      year: "Feb 2025 - Present",
+      title: "Audio Visual Technician",
+      company: "Louisiana State University ITS",
+      description: "Supported 100+ classrooms by setting up and troubleshooting AV systems. Collaborated with technical staff to ensure reliable IT operations for students and faculty.",
+      skills: ["Technical Support", "AV Systems", "Troubleshooting", "IT Operations"],
+      side: "left"
+    },
+    {
+      id: 3,
       type: "education",
-      year: "2018 - 2022",
-      title: "Bachelor of Computer Science",
-      company: "University Name",
-      description: "Focused on software engineering, algorithms, and web development. Graduated with honors.",
-      skills: ["Data Structures", "Algorithms", "Web Dev", "Databases"],
+      year: "Aug 2024 - Present",
+      title: "B.S Computer Science",
+      company: "Louisiana State University",
+      description: "Transferred in Fall 2024. Concentrations in Software Engineering & Data Science. GPA: 3.69. Relevant Coursework: Data Structures, Systems Programming, Object-Oriented Design, Operating Systems, Programming Languages.",
+      skills: ["Software Engineering", "Data Science", "OOP", "Operating Systems"],
+      side: "right"
+    },
+    {
+      id: 4,
+      type: "education",
+      year: "Aug 2023 - Jul 2024",
+      title: "Computer Science",
+      company: "University of New Orleans",
+      description: "Completed freshman year studying Computer Science before transferring to Louisiana State University. Gained foundational programming skills in Java and version control with Git.",
+      skills: ["Java", "Git", "Computer Science Fundamentals"],
+      side: "left"
+    },
+    {
+      id: 5,
+      type: "work",
+      year: "May 2023 - Dec 2025",
+      title: "Small Business Owner",
+      company: "TNT Nola Detailing",
+      description: "Founded and scaled a detailing business serving over 50+ clients. Designed and launched the company website, improving customer engagement and online bookings.",
+      skills: ["Entrepreneurship", "Web Development", "Customer Service", "Business Operations"],
+      side: "right"
+    },
+    {
+      id: 6,
+      type: "work",
+      year: "Mar 2023 - May 2024",
+      title: "Shift Lead",
+      company: "Dough Nguyener's Bakery",
+      description: "Delivered fast, friendly, and reliable service in a high-volume bakery. Trained and mentored new servers and baristas on customer service standards. Assisted with daily operations including cash handling, order management, and product knowledge.",
+      skills: ["Sales", "Mentoring", "Customer Service", "Team Leadership"],
       side: "left"
     }
   ];
