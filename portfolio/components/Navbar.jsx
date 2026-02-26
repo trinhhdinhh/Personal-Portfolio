@@ -23,10 +23,6 @@ const Navbar = () => {
 
     // Load saved preference on mount
     useEffect(() => {
-        // TEMPORARY: Clear localStorage to reset
-        localStorage.removeItem('darkMode')
-        console.log('Cleared darkMode from localStorage')
-
         const savedMode = localStorage.getItem('darkMode')
         console.log('Saved mode from localStorage:', savedMode)
         if (savedMode === 'true') {
