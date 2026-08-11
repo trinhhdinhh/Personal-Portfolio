@@ -86,6 +86,9 @@ export default function IntroOverlay() {
     const finish = () => {
       setPhase('exiting')
       document.body.style.overflow = ''
+      // Cross-fade: real logo fades in as overlay (and clone inside it) fades out
+      navLogo.style.transition = 'opacity 0.4s ease'
+      navLogo.style.opacity = '1'
       exitTimer = setTimeout(() => {
         setPhase('done')
         restoreClone()
