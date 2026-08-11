@@ -17,3 +17,17 @@
 }
 
 @variant dark (.dark &);
+
+@keyframes riseIn {
+  from { opacity: 0; transform: translateY(22px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* snap intro animations to their end state for users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  [data-intro] {
+    animation-duration: 0.01ms !important;
+    animation-delay: 0ms !important;
+  }
+}
+

@@ -70,7 +70,7 @@ const Navbar = () => {
     </div>
         <nav className={`w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex item-center justify-between z-50 transition-colors duration-200 ${isScroll ? "bg-white dark:bg-gray-900 bg-opacity-50 backdrop-blur-lg shadow-sm" : ""}`}>
             <a href="#top" className='mr-14'>
-                <h1 className='text-4xl font-bold cursor-pointer text-black dark:text-white font-ovo'>Trinh Dinh</h1>
+                <h1 id="nav-logo" className='text-4xl font-bold cursor-pointer text-black dark:text-white font-ovo'>Trinh Dinh</h1>
             </a>
             <ul className={`hidden md:flex item-center gap-6 lg:gap-8 rounded-full px-12 py-3 ${isScroll ? "": "bg-white dark:bg-gray-800 shadow-sm transition-colors duration-200"}`}>
                 <li><a className='font-Ovo dark:text-white' href="#top">Home</a></li>
@@ -79,7 +79,7 @@ const Navbar = () => {
                 <li><a className='font-Ovo dark:text-white' href="#projects">Projects</a></li>
                 <li><a className='font-Ovo dark:text-white' href="#contact">Contact Me</a></li>
             </ul>
-            <div className='flex items-center gap-4'>
+            <div data-intro className='flex items-center gap-4'>
                 <button onClick={toggleDarkMode} className='cursor-pointer'>
                     <Image src={isDarkMode ? assets.sun_icon : assets.moon_icon} alt='' className='w-6'/>
                 </button>
