@@ -10,12 +10,12 @@ const Experiences = () => {
     {
       id: 1,
       type: "work",
-      year: "Sept 2025 - Present",
-      title: "Software Engineer",
-      company: "TigerRacing Formula SAE",
-      description: "Architected and developed a full-stack member portal serving 50+ engineers across 4 technical divisions, enabling project tracking, resource allocation, and financial management for Formula SAE competition team.",
-      skills: ["React", "TypeScript", "TailwindCSS", "Figma"],
-      side: "right"
+      year: "Jun 2026 - Present",
+      title: "AI Engineer Extern",
+      company: "WayFair via Extern",
+      description: "Built AI agents using n8n and Gemini to track furniture design trends, monitor competitor product launches, pricing updates, and marketing campaigns for Wayfair's supply chain vendor management team.",
+      skills: ["AI Agent", "Product Knowledge",],
+      side: "left"
     },
     {
       id: 2,
@@ -33,12 +33,22 @@ const Experiences = () => {
       year: "Aug 2024 - Present",
       title: "B.S Computer Science",
       company: "Louisiana State University",
-      description: "Transferred in Fall 2024. Concentrations in Software Engineering & Data Science. GPA: 3.69. Relevant Coursework: Data Structures, Systems Programming, Object-Oriented Design, Operating Systems, Programming Languages.",
+      description: "Transferred in Fall 2024. Concentrations in Software Engineering. GPA: 3.70.  Relevant Coursework: Data Structures, Systems Programming, Object-Oriented Design, Operating Systems, Programming Languages, Software Systems, Database Management, Compiler Construction.",
       skills: ["Software Engineering", "Data Science", "OOP", "Operating Systems"],
       side: "right"
     },
     {
       id: 4,
+      type: "work",
+      year: "Sept 2025 - Jan 2026",
+      title: "Software Engineer",
+      company: "TigerRacing Formula SAE",
+      description: "Architected and developed a full-stack member portal serving 50+ engineers across 4 technical divisions, enabling project tracking, resource allocation, and financial management for Formula SAE competition team.",
+      skills: ["React", "TypeScript", "TailwindCSS", "Figma"],
+      side: "right"
+    },
+    {
+      id: 5,
       type: "education",
       year: "Aug 2023 - Jul 2024",
       title: "Computer Science",
@@ -48,7 +58,7 @@ const Experiences = () => {
       side: "left"
     },
     {
-      id: 5,
+      id: 6,
       type: "work",
       year: "May 2023 - Dec 2025",
       title: "Founder",
@@ -58,7 +68,7 @@ const Experiences = () => {
       side: "right"
     },
     {
-      id: 6,
+      id: 7,
       type: "work",
       year: "Mar 2023 - May 2024",
       title: "Shift Lead",
