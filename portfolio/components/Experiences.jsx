@@ -10,21 +10,21 @@ const Experiences = () => {
     {
       id: 1,
       type: "work",
-      year: "Jun 2026 - Present",
-      title: "AI Engineer Extern",
-      company: "WayFair via Extern",
-      description: "Built AI agents using n8n and Gemini to track furniture design trends, monitor competitor product launches, pricing updates, and marketing campaigns for Wayfair's supply chain vendor management team.",
-      skills: ["AI Agent", "Product Knowledge",],
-      side: "left"
-    },
-    {
-      id: 2,
-      type: "work",
       year: "Feb 2025 - Present",
       title: "IT Support Technician",
       company: "LSU ITS",
       description: "Supported 100+ classrooms by setting up and troubleshooting AV systems. Collaborated with technical staff to ensure reliable IT operations for students and faculty.",
       skills: ["Technical Support", "AV Systems", "Troubleshooting", "IT Operations"],
+      side: "left"
+    },
+    {
+      id: 2,
+      type: "work",
+      year: "Jun 2026 - Aug 2026",
+      title: "AI Engineer Extern",
+      company: "WayFair via Extern",
+      description: "Built AI agents using n8n and Gemini to track furniture design trends, monitor competitor product launches, pricing updates, and marketing campaigns for Wayfair's supply chain vendor management team.",
+      skills: ["AI Agent", "Product Knowledge",],
       side: "left"
     },
     {
